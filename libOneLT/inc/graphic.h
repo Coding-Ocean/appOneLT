@@ -44,9 +44,7 @@ void line(const class VECTOR& p1, const class VECTOR& p2,
 	const struct COLOR& strokeColor, float strkWeight);
 void circle(const class VECTOR& p, float diameter,
 	const struct COLOR& fillColor, const struct COLOR& strokeColor, float strokeW);
-void rect(const class VECTOR& p, float w, float h, float angle,
-	enum RECT_MODE mode,
-	const struct COLOR& fillColor, const struct COLOR& strokeColor, float strokeW);
+void rect(const class VECTOR& p, float w, float h, float angle,const enum RECT_MODE mode,const struct COLOR& fillColor, const struct COLOR& strokeColor, float strokeW);
 struct SHAPE_VERTEX { float x, y; };
 int createShape(struct SHAPE_VERTEX* vertices, int numVertices);
 int createShape(struct SHAPE_VERTEX* vertices, int numVertices, long* indices, int numIndices);
